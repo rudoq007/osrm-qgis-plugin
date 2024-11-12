@@ -11,6 +11,7 @@
         git sha              : $Format:%H$
  ***************************************************************************/
 
+
 /***************************************************************************
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -22,6 +23,8 @@
  This script initializes the plugin, making it known to QGIS.
 """
 
+# Import QgsInterface from qgis.utils to ensure compatibility with QGIS 3.x
+from qgis.utils import QgsInterface
 
 # noinspection PyPep8Naming
 def classFactory(iface):  # pylint: disable=invalid-name
@@ -30,6 +33,5 @@ def classFactory(iface):  # pylint: disable=invalid-name
     :param iface: A QGIS interface instance.
     :type iface: QgsInterface
     """
-    #
     from .osrm import OSRM
     return OSRM(iface)

@@ -22,11 +22,11 @@
 """
 from qgis.core import *
 from qgis.utils import iface
-from PyQt4.QtCore import (
+from qgis.PyQt.QtGui import (
     QTranslator, qVersion, QCoreApplication,
     QObject, SIGNAL, Qt, pyqtSlot, QSettings
     )
-from PyQt4.QtGui import (
+from qgis.PyQt.QtGui import (
     QAction, QIcon, QMessageBox,
     )
 # Initialize Qt resources from file resources.py

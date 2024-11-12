@@ -12,7 +12,7 @@
  ***************************************************************************/
 
 """
-from qgis.core import QgsInterface
+from qgis.utils import QgsInterface
 from qgis.utils import iface
 from qgis.PyQt.QtCore import QTranslator, QCoreApplication, QSettings, pyqtSlot
 from qgis.PyQt.QtGui import QIcon

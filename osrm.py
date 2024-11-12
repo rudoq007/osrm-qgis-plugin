@@ -25,7 +25,6 @@ from osrm_dialog import (
     OSRM_batch_route_Dialog, OSRM_DialogTSP
 )
 
-
 class OSRM:
     """QGIS Plugin Implementation."""
 

@@ -23,9 +23,6 @@
  This script initializes the plugin, making it known to QGIS.
 """
 
-# Import QgsInterface from qgis.utils to ensure compatibility with QGIS 3.x
-from qgis.utils import QgsInterface
-
 # noinspection PyPep8Naming
 def classFactory(iface):  # pylint: disable=invalid-name
     """Load OSRM class from file OSRM.
